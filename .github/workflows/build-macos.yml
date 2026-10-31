@@ -35,7 +35,7 @@ jobs:
         with:
           repository: Galavic/Nivo
           ref: ${{ inputs.ref }}
-          token: ${{ secrets.NIVO_SOURCE_TOKEN }}
+          ssh-key: ${{ secrets.NIVO_SOURCE_KEY }}
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
